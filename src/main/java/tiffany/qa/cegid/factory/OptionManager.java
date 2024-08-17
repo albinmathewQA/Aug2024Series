@@ -32,7 +32,7 @@ public class OptionManager {
 	public FirefoxOptions getFirefoxoptions() {
 		fo = new FirefoxOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
-			System.out.println(" I am in incogninto mode");
+			System.out.println(" I am in incogninto mode test");
 
 			fo.addArguments("--headless");
 		}
