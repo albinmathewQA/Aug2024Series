@@ -22,7 +22,7 @@ pipeline
         stage('Regression Automation Test in QA') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Nov2022POMSeriesCode.git'
+                    git 'https://github.com/albinmathewQA/Aug2024Series.git'
                     bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/Testrunners/sanitytest.xml"
                     
                 }
@@ -57,7 +57,7 @@ pipeline
         stage('Regression Automation Test in Stage') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Nov2022POMSeriesCode.git'
+                    git 'https://github.com/albinmathewQA/Aug2024Series.git'
                     bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/Testrunners/tesntngbuild.xml"
                     
                 }
