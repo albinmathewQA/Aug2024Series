@@ -65,7 +65,7 @@ pipeline
         }
                 
      
-        stage('Publish Allure Reports') {
+        stage('Publish Allure Reports for stage') {
            steps {
                 script {
                     allure([
