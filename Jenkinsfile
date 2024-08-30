@@ -19,7 +19,7 @@ pipeline
         
         
                 
-        stage('Regression Automation Test') {
+        stage('Regression Automation Test in QA') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/naveenanimation20/Nov2022POMSeriesCode.git'
@@ -54,7 +54,7 @@ pipeline
         
         
                 
-        stage('Regression Automation Test') {
+        stage('Regression Automation Test in Stage') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/naveenanimation20/Nov2022POMSeriesCode.git'
