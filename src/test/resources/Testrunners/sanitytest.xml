@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart App Regression Suite" verbose="4" thread-count="3"
+	parallel="tests">
+
+	<listeners>
+
+		<listener
+			class-name="tiffany.qa.opencart.listener.TestAllureListener" />
+			<listener
+			class-name="tiffany.qa.opencart.listener.AnnotationTransformer" />	
+
+	</listeners>
+	<test name="Login Page Test">
+
+		<classes>
+			<class name="tiffany.qa.cegid.naveen.test.LoginTest" />
+		</classes>
+	</test>
+
+
+</suite>
